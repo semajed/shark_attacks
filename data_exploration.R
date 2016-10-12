@@ -8,4 +8,9 @@ str(sharks)
 
 head(sharks)
 
-hist(sharks$Country)
+head(sharks$Type)
+
+shark_country = as.factor(sharks$Country) 
+attack_type = as.factor(sharks$Type)
+barplot(prop.table(table(attack_type)))
+hist(sharks$age)
